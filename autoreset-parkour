@@ -1,0 +1,27 @@
+-- Loop Reseter for Parkour
+
+-- TUTORIAL: Keep pressing backspace (or your respawn hotkey in parkour) while using this script
+
+plr = game.Players.LocalPlayer
+
+Enabled = false
+
+-- Important Stuff! Do not touch unless you know what your doing. --
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "=" then
+    if Enabled == false then
+       -- Finds out if Enabled is false or not
+       Enabled = true
+       -- Enables enabled
+       while Enabled == true do
+       plr.Character.Humanoid.Health = 0 -- Kills player
+       wait(1)
+       end
+       print("Enabled") -- Displays a message so that the player knows that it is enabled
+   else
+       Enabled = false
+       print("Disabled") -- Displays a message so that the player knows that it is disabled
+    end
+ end
+end)
