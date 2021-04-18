@@ -1,0 +1,11 @@
+-- Super Wallboost Height
+
+game.ReplicatedStorage.Gear.Glove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.BlackGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.MasterGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.CustomGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.PraxisGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.PrimeGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.DualityGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.ArtificeGlove.Wallclimb.Value = 30
+game.ReplicatedStorage.Gear.SybariticGlove.Wallclimb.Value = 30
