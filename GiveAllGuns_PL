@@ -1,22 +1,47 @@
 -- Give all Prison Life Guns script
 
+local players = game.Players
+
+
+function ak47()
 	local Weapon = {"AK-47"}
 for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
 if v.Name == Weapon[1] then
 local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
 end
 end
+end
 
+function shotgun()
 	local Weapon = {"Remington 870"}
 for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
 if v.Name == Weapon[1] then
 local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
 end
 end
+end
 
+function M9()
 	local Weapon = {"M9"}
 for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
 if v.Name == Weapon[1] then
 local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
 end
 end
+end
+
+ak47()
+shotgun()
+M9()
+
+players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        local humanoid = character:WaitForChild("Humanoid")
+        
+        humanoid.Died:Connect(function(died)
+         ak47()
+	     shotgun()
+	     M9()
+    end)
+end)
+end)
