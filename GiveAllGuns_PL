@@ -1,0 +1,22 @@
+-- Give all Prison Life Guns script
+
+	local Weapon = {"AK-47"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+
+	local Weapon = {"Remington 870"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+
+	local Weapon = {"M9"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
